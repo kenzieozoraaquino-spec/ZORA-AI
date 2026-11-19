@@ -1,0 +1,30 @@
+
+# ZORA AI
+
+ZORA AI adalah AI Agent pribadi yang dirancang
+untuk membantu aktivitas digital secara cerdas.
+
+## Fitur
+
+- AI Chat Assistant
+- AI Agent
+- REST API
+- WhatsApp integration (pengembangan berikutnya)
+- Dukungan hosting 24/7
+
+## Teknologi
+
+- Node.js
+- Express.js
+- OpenAI API
+
+## Instalasi
+
+1. Clone repository
+2. Jalankan npm install
+3. Atur OPENAI_API_KEY di environment
+4. Jalankan npm start
+
+## Developer
+
+ZORA AI Project
