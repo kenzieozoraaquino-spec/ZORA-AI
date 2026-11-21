@@ -46,6 +46,15 @@ app.get("/health", (req, res) => {
 
 app.post("/chat", async (req, res) => {
   try {
+    if (
+      !process.env.ZORA_ACCESS_KEY ||
+      req.headers["x-zora-key"] !== process.env.ZORA_ACCESS_KEY
+    ) {
+      return res.status(401).json({
+        success: false,
+        error: "Akses ditolak. API key tidak valid."
+      });
+    }
     const { message, conversationId } = req.body;
 
     if (!message || typeof message !== "string") {
